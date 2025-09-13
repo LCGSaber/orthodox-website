@@ -1,0 +1,195 @@
+.aboutUsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* 调整位置后的背景文字 "Education" */
+  .backgroundText {
+    position: absolute;
+    top: -5%; /*垂直位置上移，避免与内容重叠过多 */
+    left: 50%;  /*居中显示 */
+    transform: translateX(-50%); /* 仅水平居中，不垂直居中 */
+    font-size: clamp(100px, 20vw, 140px); /* 使用clamp进行响应式字体大小调整 */
+    font-weight: 900;
+    color: #e6f2ff; /* 浅天空色 */
+    z-index: 1;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+  
+  /* 左侧内容区 */
+  .contentWrapper {
+    flex: 1 1 45%;
+    min-width: 300px;
+    margin-right: 20px;
+    margin-left: 0;
+    z-index: 2;
+    transition: all 0.5s ease;
+    position: relative;
+  }
+  
+  .title {
+    font-size: clamp(20px, 4vw, 28px);
+    font-weight: bold;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+    color: #333;
+  }
+  
+  .description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+    font-size: clamp(14px, 2vw, 16px);
+    color: #666;
+  }
+  
+  .moreLink {
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .moreButton {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    color: #333;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .moreButton:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* 右侧服务项区域 */
+  .servicesWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    flex: 1 1 45%;
+    min-width: 300px;
+    z-index: 2;
+    margin-top: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .serviceItemLink {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .serviceItem {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /* 图标样式 */
+  .icon1, .icon2, .icon3, .icon4 {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-color: #e6f2ff;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .icon1 { background-image: url('/home/book-alt.svg'); }
+  .icon2 { background-image: url('/home/tree-alt.svg'); }
+  .icon3 { background-image: url('/home/hat-alt.svg'); }
+  .icon4 { background-image: url('/home/airplane-alt.svg'); }
+  
+  .serviceItem span {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* 鼠标悬停动画效果 */
+  .aboutUsContainer:hover .contentWrapper,
+  .aboutUsContainer:hover .servicesWrapper {
+    transform: translateY(8px);
+    opacity: 0.95;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 1024px) {
+    .aboutUsContainer {
+      padding: 30px 15px;
+    }
+    
+    .contentWrapper, .servicesWrapper {
+      flex: 1 1 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .servicesWrapper {
+      margin-top: 30px;
+    }
+    
+    .backgroundText {
+      font-size: clamp(70px, 15vw, 100px);
+      left: 50%;
+      top: 15%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .aboutUsContainer {
+      padding: 20px 15px;
+    }
+    
+    .servicesWrapper {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    
+    .backgroundText {
+      font-size: clamp(50px, 12vw, 70px);
+      left: 50%;
+      top: 10%;
+    }
+    
+    .serviceItem {
+      padding: 15px;
+    }
+    
+    .icon1, .icon2, .icon3, .icon4 {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutUsContainer {
+      padding: 15px 10px;
+    }
+    
+    .backgroundText {
+      font-size: clamp(40px, 10vw, 50px);
+    }
+  }
+      

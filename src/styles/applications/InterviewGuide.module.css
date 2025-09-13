@@ -1,0 +1,65 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .pageTitle {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    border-left: 5px solid #f0c090; /* 左侧装饰线，模拟设计风格 */
+    padding-left: 10px;
+  }
+  
+  .categorySection {
+    margin-bottom: 40px;
+    background-color:  #e6f2ff; /* 浅天空色 */
+    /* padding: 20px; */
+    /* border-radius: 8px; */
+    box-shadow: 0 2px 6px rgba(247, 247, 213, 0.05);
+  }
+  
+  .categoryTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .categoryTitle::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: #f0c090; /* 菱形符号颜色，匹配装饰风格 */
+  }
+  
+  .questionList {
+    list-style-type: decimal;
+    margin-left: 20px;
+    padding-left: 10px;
+  }
+  
+  .questionItem {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  /* 响应式设计 */
+  @media (max-width: 768px) {
+   .container {
+      padding: 20px 15px;
+    }
+   .pageTitle {
+      font-size: 24px;
+    }
+   .categoryTitle {
+      font-size: 18px;
+    }
+  }

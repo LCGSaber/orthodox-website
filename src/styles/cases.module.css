@@ -1,0 +1,635 @@
+/* 案例页面样式 */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* 滚动时头部样式变化 */
+.headerScrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+/* 页面标题区域 */
+.heroSection {
+  background: linear-gradient(135deg, #467238 0%, #7D914C 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/home/tree-alt.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 30%;
+  opacity: 0.1;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pageSubtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+.heroBorder {
+  width: 80px;
+  height: 4px;
+  background-color: #f0c090;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* 案例过滤区域 */
+.filterSection {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filterContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.filterTabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filterTab {
+  padding: 12px 24px;
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.filterTab:hover {
+  border-color: #467238;
+  color: #467238;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activeFilter {
+  background-color: #467238;
+  color: white;
+  border-color: #467238;
+  box-shadow: 0 4px 15px rgba(86, 104, 62, 0.3);
+}
+
+/* 案例展示区域 */
+.casesSection {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.casesContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.caseCard {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.caseCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.caseImage {
+  width: 40%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 移除了渐变遮罩层，使图片能够高清显示 */
+/* .caseImage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(86, 104, 62, 0.8) 0%, rgba(86, 104, 62, 0.5) 100%);
+  z-index: 1;
+} */
+
+.caseIcon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.caseContent {
+  width: 60%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.caseHeader {
+  margin-bottom: 25px;
+}
+
+.caseTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.caseMeta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.studentName {
+  font-size: 16px;
+  color: #467238;
+  font-weight: 600;
+  padding: 4px 12px;
+  background-color: rgba(86, 104, 62, 0.1);
+  border-radius: 15px;
+}
+
+.caseYear {
+  font-size: 14px;
+  color: #777;
+  font-weight: 500;
+}
+
+.caseDetails {
+  margin-bottom: 25px;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.detailIcon {
+  color: #f0c090;
+}
+
+.map-pin-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('/home/hat-alt.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: hue-rotate(30deg);
+}
+
+.caseBody {
+  flex: 1;
+}
+
+.contentItem {
+  margin-bottom: 20px;
+}
+
+.contentTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #467238;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.contentTitle::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 2px;
+  background-color: #f0c090;
+}
+
+.contentText {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666;
+  padding-left: 15px;
+}
+
+.caseFooter {
+  margin-top: 30px;
+}
+
+.viewMoreButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #467238;
+  color: white;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.viewMoreButton:hover {
+  background-color: #465731;
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(86, 104, 62, 0.3);
+}
+
+/* 咨询区域 */
+.consultationSection {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.consultationSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/home/papers.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  opacity: 0.03;
+}
+
+.consultationContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.consultationTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.consultationText {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.consultationButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 40px;
+  background-color: #f0c090;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.consultationButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: all 0.6s ease;
+}
+
+.consultationButton:hover::before {
+  left: 100%;
+}
+
+.consultationButton:hover {
+  background-color: #e5af78;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(240, 192, 144, 0.3);
+}
+
+/* 无案例提示 */
+.noCases {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+
+.noCases p {
+  font-size: 18px;
+  color: #777;
+  font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .caseImage {
+    width: 45%;
+  }
+  
+  .caseContent {
+    width: 55%;
+    padding: 35px;
+  }
+  
+  .pageTitle {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 992px) {
+  .caseCard {
+    flex-direction: column;
+  }
+  
+  .caseImage {
+    width: 100%;
+    height: 250px;
+  }
+  
+  .caseContent {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .caseIcon {
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .pageTitle {
+    font-size: 36px;
+  }
+  
+  .heroSection {
+    padding: 60px 0;
+  }
+  
+  .casesSection {
+    padding: 60px 0;
+  }
+  
+  .consultationSection {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 32px;
+  }
+  
+  .pageSubtitle {
+    font-size: 16px;
+  }
+  
+  .caseTitle {
+    font-size: 24px;
+  }
+  
+  .caseContent {
+    padding: 25px;
+  }
+  
+  .filterTab {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .consultationTitle {
+    font-size: 28px;
+  }
+  
+  .consultationText {
+    font-size: 16px;
+  }
+  
+  .consultationButton {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+  
+  .caseImage {
+    height: 200px;
+  }
+  
+  .caseContent {
+    padding: 20px;
+  }
+  
+  .caseIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .caseTitle {
+    font-size: 22px;
+  }
+  
+  .filterTabs {
+    gap: 8px;
+  }
+  
+  .filterTab {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+  
+  .heroSection,
+  .casesSection,
+  .consultationSection {
+    padding: 40px 0;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 装饰元素 */
+.caseCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(240, 192, 144, 0.1);
+  border-radius: 0 0 0 100%;
+  transition: all 0.3s ease;
+}
+
+.caseCard:hover::after {
+  background-color: rgba(240, 192, 144, 0.2);
+  width: 150px;
+  height: 150px;
+}
+
+/* 确保页面内容足够显示 */
+@media (max-width: 480px) {
+  .heroContainer,
+  .filterContainer,
+  .casesContainer,
+  .consultationContainer {
+    padding: 0 15px;
+  }
+}
+
+/* 增强视觉体验的样式 */
+.contentItem:last-child {
+  margin-bottom: 0;
+}
+
+.caseCard:nth-child(even) .caseIcon {
+  background-color: #f0c090;
+  color: white;
+}
+
+/* 加载时的动画 */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .caseCard {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .caseCard:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .caseCard:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .caseCard:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+}

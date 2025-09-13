@@ -1,0 +1,7 @@
+{
+  "name": "orthodox_site",
+  "script": "yarn start",
+  "env": {
+    "PORT": "1345"
+  }
+}

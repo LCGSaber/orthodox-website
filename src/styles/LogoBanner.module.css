@@ -1,0 +1,161 @@
+/* Logo Banner 容器 */
+.logoBannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* 使用视口高度实现满屏展示 */
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0; /* 移除底部内边距 */
+  margin: 0;
+}
+
+/* Logo 包装器 */
+.logoWrapper {
+  margin-bottom: 20px;
+}
+
+/* Logo 方块 - 黑灰色背景，中间绿色空心正方形 */
+.logoSquare {
+  width: 60px;
+  height: 60px;
+  background-color: #4b5050;
+  border: 12px solid #4b5050;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* 中间绿色空心正方形 */
+.logoSquare::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 5px solid rgb(73, 120, 57);
+  background-color: transparent;
+}
+
+/* 文本容器 */
+.textContainer {
+  margin-bottom: 15px;
+  max-width: 800px;
+}
+
+/* 英文标题 */
+.englishTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4b5050;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* 标题分隔线 */
+.titleDivider {
+  width: 80px;
+  height: 3px;
+  background-color: rgb(73, 120, 57);
+  margin: 0 auto 20px;
+}
+
+/* 中文标题 */
+.chineseTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4b5050;
+  margin-bottom: 15px;
+}
+
+/* 绿色文字 */
+.greenText {
+  color: rgb(73, 120, 57);
+}
+
+/* 座右铭 */
+.motto {
+  font-size: 16px;
+  color: #4b5050;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+/* 年份容器 */
+.yearContainer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; /* 改为100%宽度以匹配容器 */
+  background-color: rgb(73, 120, 57);
+  padding: 24px 0;
+  margin: 0; /* 确保没有额外边距 */
+}
+
+/* 年份文本 */
+.yearText {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .logoBannerContainer {
+    padding: 40px 15px 0; /* 移除底部padding，确保年份容器正确显示在底部 */
+    min-height: 100vh;
+  }
+  
+  .englishTitle {
+    font-size: 22px;
+  }
+  
+  .chineseTitle {
+    font-size: 32px;
+  }
+  
+  .motto {
+    font-size: 16px;
+  }
+  
+  .yearContainer {
+    padding: 20px 0;
+    z-index: 10; /* 确保年份容器在最上层 */
+  }
+  
+  .yearText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoBannerContainer {
+    padding: 30px 15px 0; /* 移除底部padding，确保年份容器正确显示在底部 */
+    min-height: 100vh;
+  }
+  
+  .englishTitle {
+    font-size: 18px;
+  }
+  
+  .chineseTitle {
+    font-size: 28px;
+  }
+  
+  .motto {
+    font-size: 14px;
+  }
+  
+  .yearContainer {
+    padding: 16px 0;
+    z-index: 10; /* 确保年份容器在最上层 */
+  }
+  
+  .yearText {
+    font-size: 12px;
+  }
+}

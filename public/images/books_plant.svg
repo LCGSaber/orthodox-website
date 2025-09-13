@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect x="250" y="220" width="140" height="30" rx="5" fill="#2a643d" />
+  <rect x="260" y="222" width="120" height="26" rx="3" fill="#ffffff" />
+  <rect x="255" y="195" width="130" height="30" rx="5" fill="#2a643d" />
+  <rect x="265" y="197" width="110" height="26" rx="3" fill="#ffffff" />
+  <rect x="260" y="170" width="120" height="30" rx="5" fill="#2a643d" />
+  <rect x="270" y="172" width="100" height="26" rx="3" fill="#ffffff" />
+  <rect x="265" y="145" width="110" height="30" rx="5" fill="#2a643d" />
+  <rect x="275" y="147" width="90" height="26" rx="3" fill="#ffffff" />
+  <rect x="270" y="120" width="100" height="30" rx="5" fill="#2a643d" />
+  <rect x="280" y="122" width="80" height="26" rx="3" fill="#ffffff" />
+  
+  <!-- 左侧植物 -->
+  <path d="M200,120 Q220,100 240,120" stroke="#3a8c52" stroke-width="4" fill="none" />
+  <path d="M220,80 Q240,60 260,80" stroke="#3a8c52" stroke-width="4" fill="none" />
+  <path d="M180,150 Q200,130 220,150" stroke="#3a8c52" stroke-width="4" fill="none" />
+  
+  <!-- 右侧植物 -->
+  <path d="M380,80 Q400,60 420,80" stroke="#3a8c52" stroke-width="4" fill="none" />
+  <path d="M400,120 Q420,100 440,120" stroke="#3a8c52" stroke-width="4" fill="none" />
+  <path d="M380,150 Q400,130 420,150" stroke="#3a8c52" stroke-width="4" fill="none" />
+  
+  <!-- 叶子 -->
+  <ellipse cx="240" cy="120" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="220" cy="80" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="260" cy="80" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="180" cy="150" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="220" cy="150" rx="15" ry="25" fill="#4ac959" />
+  
+  <ellipse cx="420" cy="80" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="400" cy="120" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="440" cy="120" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="380" cy="150" rx="15" ry="25" fill="#4ac959" />
+  <ellipse cx="420" cy="150" rx="15" ry="25" fill="#4ac959" />
+</svg>

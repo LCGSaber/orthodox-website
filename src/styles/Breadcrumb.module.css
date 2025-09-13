@@ -1,0 +1,30 @@
+.breadcrumbContainer {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #666;
+    padding: 2% 10%;
+  }
+  
+  .breadcrumbItem {
+    color: #92c4f9; /* 可根据实际设计调整颜色 */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .breadcrumbItemCurrent {
+    color: #0c0c0c; /* 可根据实际设计调整颜色 */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .breadcrumbItem:hover {
+    color: #060606; /*  hover 状态颜色变化 */
+  }
+  
+  .divider {
+    margin: 0 8px;
+    color: #999;
+  }
