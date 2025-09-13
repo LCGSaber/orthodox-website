@@ -38,14 +38,14 @@ const SideMenu: React.FC<SideMenuProps> = ({ isOpen, onClose }) => {
 
         {/* 导航列表 */}
         <nav className="flex flex-col space-y-2">
-          <a href="/" className="text-gray-700 hover:text-yellow-500">首页</a>
+          {/* <a href="/" className="text-gray-700 hover:text-yellow-500">首页</a>
           <a href="/apply" className="text-gray-700 hover:text-yellow-500">香港学校申请</a>
           <a href="/recommend" className="text-gray-700 hover:text-yellow-500">香港名校推荐</a>
           <a href="/courses" className="text-gray-700 hover:text-yellow-500">港式课程</a>
           <a href="/cases" className="text-gray-700 hover:text-yellow-500">成功案例</a>
           <a href="/news" className="text-gray-700 hover:text-yellow-500">教育资讯</a>
           <a href="/about" className="text-gray-700 hover:text-yellow-500">关于我们</a>
-          <a href="/team" className="text-gray-700 hover:text-yellow-500">专业团队</a>
+          <a href="/team" className="text-gray-700 hover:text-yellow-500">专业团队</a> */}
         </nav>
 
         {/* 联系方式 */}

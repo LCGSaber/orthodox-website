@@ -59,10 +59,10 @@ const AssessmentBanner= ({
         className={styles.bannerImage}
         style={{ minHeight: isMobile ? '300px' : 'auto' }}
       />
-      <div className={styles.textOverlay} style={isMobile ? mobileContentStyle : undefined}>
+      {/* <div className={styles.textOverlay} style={isMobile ? mobileContentStyle : undefined}>
         <h2 className={styles.mainText} style={isMobile ? mobileTitleStyle : undefined}>{mainText}</h2>
         <p className={styles.subText} style={isMobile ? mobileSubtitleStyle : undefined}>{subText}</p>
-      </div>
+      </div> */}
     </div>
     </div>
   );

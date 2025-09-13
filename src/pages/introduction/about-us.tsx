@@ -157,14 +157,14 @@ const AboutUsPage: React.FC = () => {
           
           {/* 引用文字区域 */}
           <div className="max-w-4xl mx-auto flex items-center justify-between mb-16">
-            <div className="text-8xl font-bold text-[#467238]">"</div>
+            <div className="text-8xl font-bold text-[#467238]">&quot;</div>
             <div className="flex items-center flex-1 px-8">
               <p className="text-4xl font-bold text-[#467238] mr-6">100%</p>
               <p className="text-lg text-gray-700 leading-relaxed">
               {g(homepage,'apply_t_16')}
               </p>
             </div>
-            <div className="text-8xl font-bold text-[#467238] transform scale-x-[-1]">"</div>
+            <div className="text-8xl font-bold text-[#467238] transform scale-x-[-1]">&quot;</div>
           </div>
           
           {/* 底部文本 */}

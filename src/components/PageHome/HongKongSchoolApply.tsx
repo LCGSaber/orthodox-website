@@ -3,7 +3,6 @@ import styles from "src/styles/HongKongSchoolApply.module.css";
 import InterviewGuide from "../Application/InterviewGuide";
 import Link from "next/link";
 import homepage from 'apidata/homepage-zx.json'
-import HongKongSchoolApplyComponents from "./HongKongApplyComponents";
 import { useRouter } from 'next/router'
 
 const HongKongSchoolApply: React.FC = () => {
