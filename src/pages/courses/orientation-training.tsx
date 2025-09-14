@@ -8,15 +8,7 @@ import Banner from 'src/components/PageHome/Banner'
 import LittleMenu from 'src/components/PageHome/LittleMenu'
 import Footer from 'src/components/Footer'
 import homepage from 'apidata/homepage-zx.json'
-import HongKongSchoolApply from 'src/components/PageHome/HongKongSchoolApply'
-
-const imagesEnv = [
-  "https://www.hkbacui.com/template/static/home/images/about/a1/23.jpg",
-  "https://www.hkbacui.com/template/static/home/images/about/a1/22.jpg",
-  "https://www.hkbacui.com/template/static/home/images/about/a1/1.jpg",
-  "https://www.hkbacui.com/template/static/home/images/about/a1/8.jpg"
-  // 可继续添加更多图片路径
-];
+import OrientationTraining from 'src/components/PageHome/OrientationTraining'
 
 const ApplicationInternationalScool = () => {
   const router = useRouter(); // 用于获取当前路由信息
@@ -36,12 +28,12 @@ const ApplicationInternationalScool = () => {
         <Header />
       </div>
     <Banner 
-      imageSrc= "/images/board-1.png"  
-      mainText ={g(homepage,'apply_1')}  
+      imageSrc= "/images/teacher-7.png"  
+      mainText ={g(homepage,'course_rx')}  
       subText="HK Outstanding Education"
       imageStyle={{ height: '300px', width: '100%' }}/>
-    <LittleMenu text1={g(homepage,'home')} link1='/application/international-school' text2={g(homepage,'application_in')}/>
-    <HongKongSchoolApply/>
+    <LittleMenu text1={g(homepage,'home')} link1='/application/orientation-training' text2={g(homepage,'course_rx')}/>
+    <OrientationTraining/>
     <Footer textColor="white" />
     </>
   )

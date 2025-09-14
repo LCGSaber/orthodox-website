@@ -1,0 +1,225 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* 标题及背景文字样式 */
+  .titleWrapper {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .mainTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .backgroundText {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    font-size: 80px;
+    font-weight: bold;
+    color:  #467238; /* 浅天空色 */
+    /* z-index: -1; */
+    z-index: 1;
+  }
+  
+  /* 导航栏样式 */
+  .navBar {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .navItem {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .activeNav {
+    color: #333;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .activeNav::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+  }
+  
+  .navItem:hover {
+    color: #333;
+  }
+  
+  /*  section 通用样式 */
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .sectionTitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* 申请材料列表样式 */
+  .materialsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .materialItem {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color:  #467238; /* 浅天空色 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .materialIcon {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    margin-right: 10px;
+  }
+  
+  /* 申请步骤列表样式 */
+  .stepsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .stepItem {
+    background-color:  #467238; /* 浅天空色 */
+    padding: 20px;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stepHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .stepNumber {
+    background-color: #d9b981;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .stepTitle {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .stepContent {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .stepIcon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  .bannerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #467238; /* 背景色，模拟设计图的浅色调 */
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .bannerText {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .consultButton {
+    background-color: #94c6fb; /* 按钮橙色，匹配设计 */
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .consultButton:hover {
+    background-color: #f3ec21; /*  hover 深色，增强交互反馈 */
+  }
+
+  
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .bannerText {
+     font-size: 16px;
+   }
+  .consultButton {
+     padding: 10px 30px;
+     font-size: 14px;
+   }
+ }
+  /* 响应式设计 */
+  @media (max-width: 992px) {
+   .materialsList,
+   .stepsList {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+   .materialsList,
+   .stepsList {
+      grid-template-columns: 1fr;
+    }
+   .navBar {
+      flex-direction: column;
+      gap: 10px;
+    }
+   .activeNav::after {
+      display: none;
+    }
+  }

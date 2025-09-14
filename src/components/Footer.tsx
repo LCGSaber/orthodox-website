@@ -115,18 +115,18 @@ const Footer: React.FC<{
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gray-100 mb-2">
                     {/* 香港载萃教育二维码 */}
-                    <div className="w-full h-full flex items-center justify-center text-xs">二维码</div>
+                    <img src="/images/qrcode_for_gh.jpg" alt="香港正心教育二维码" className="w-full h-full object-contain" />
                   </div>
                   <div className="text-xs">香港正心教育</div>
                 </div>
-                 {/* 港澳直通车二维码 
+                 {/* 港澳直通车二维码  */}
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gray-100 mb-2">
                    
                     <div className="w-full h-full flex items-center justify-center text-xs">二维码</div>
                   </div>
-                  <div className="text-xs">港澳直通车</div>
-                </div>*/}
+                  <div className="text-xs">正心微信号</div>
+                </div>
                  {/* 小红书二维码 
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gray-100 mb-2">

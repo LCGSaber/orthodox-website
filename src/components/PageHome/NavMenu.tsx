@@ -85,9 +85,9 @@ const NavMenu: React.FC = () => {
     },
     {
       title: g(homepage,'course'),
-      path: "/course/orientation—training",
+      path: "/courses/orientation-training",
       subMenus: [
-        { title: g(homepage,'course_rx'), path: "/courses/orientation—training" },
+        { title: g(homepage,'course_rx'), path: "/courses/orientation-training" },
         { title: g(homepage,'course_1'), path: "/courses/subject-tutoring" },
         { title: g(homepage,'course_2'), path: "/courses/after-school-care" },
         { title: g(homepage,'course_3'), path: "/courses/academic-planning" },

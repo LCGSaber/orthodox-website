@@ -14,7 +14,7 @@ const LittleMenu= ({
   text2 = '',
 }: propsT) => {
   return (
-    <div className="bg-white border-l-8 border-r-8 border-blue-200">
+    <div className="bg-white">
     <div className={styles.breadcrumbContainer}>
     <Link href={link1} className={styles.breadcrumbItem}>
       {text1}
