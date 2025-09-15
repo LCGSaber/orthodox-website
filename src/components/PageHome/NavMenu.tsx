@@ -120,7 +120,7 @@ const NavMenu: React.FC = () => {
           {mainMenus.map((menu, index) => (
             <div key={index} style={mobileMenuItemStyles}>
               <div className="flex items-center justify-between" onClick={() => menu.subMenus.length > 0 && toggleSubMenu(index)}>
-                <Link href={menu.path} className={`font-medium transition-colors py-2 inline-block ${isActive(menu.path) ? 'text-yellow-600' : 'text-gray-700'}`} onClick={() => setOpenSubMenu(null)}>
+                <Link href={menu.path} className={`font-medium transition-colors py-2 inline-block ${isActive(menu.path) ? 'text-yellow-600' : 'text-gray-700'}`} style={{ fontSize: '1.1rem' }}>
                   {menu.title}
                 </Link>
                 {menu.subMenus.length > 0 && (

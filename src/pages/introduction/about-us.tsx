@@ -36,7 +36,7 @@ const AboutUsPage: React.FC = () => {
             </div>
             
             <div className="space-y-8 text-gray-700 leading-relaxed text-left">
-              <p>
+              <p className={styles.introParagraph}>
               {g(homepage,'apply_t_6')}
               </p>
               
@@ -93,7 +93,7 @@ const AboutUsPage: React.FC = () => {
           </div>
           
           {/* 圆环图区域 */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* 国际学校 */}
             <div className="flex flex-col items-center">
               <div className="relative w-40 h-40 mb-4">
@@ -106,7 +106,7 @@ const AboutUsPage: React.FC = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">{g(homepage,'application_in')}</h3>
-              <p className="text-center text-gray-600">{g(homepage,'apply_t_9')}</p>
+              <p className="text-center text-gray-600 text-sm sm:text-base">{g(homepage,'apply_t_9')}</p>
             </div>
             
             {/* 公立學校 */}
@@ -121,7 +121,7 @@ const AboutUsPage: React.FC = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">{g(homepage,'apply_t_10')}</h3>
-              <p className="text-center text-gray-600">{g(homepage,'apply_t_11')}</p>
+              <p className="text-center text-gray-600 text-sm sm:text-base">{g(homepage,'apply_t_11')}</p>
             </div>
             
             {/* 申請成功 */}
@@ -136,7 +136,7 @@ const AboutUsPage: React.FC = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">{g(homepage,'apply_t_12')}</h3>
-              <p className="text-center text-gray-600">{g(homepage,'apply_t_13')}</p>
+              <p className="text-center text-gray-600 text-sm sm:text-base">{g(homepage,'apply_t_13')}</p>
             </div>
             
             {/* 大學錄取 */}
@@ -151,7 +151,7 @@ const AboutUsPage: React.FC = () => {
                 </div>
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">{g(homepage,'apply_t_14')}</h3>
-              <p className="text-center text-gray-600">{g(homepage,'apply_t_15')}</p>
+              <p className="text-center text-gray-600 text-sm sm:text-base">{g(homepage,'apply_t_15')}</p>
             </div>
           </div>
           

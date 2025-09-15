@@ -34,3 +34,24 @@
 .animateFadeIn:nth-child(3) {
   animation-delay: 0.6s;
 }
+
+/* 简介段落样式 - 优化移动端显示 */
+.introParagraph {
+  font-size: 1rem; /* 默认字体大小 */
+  line-height: 1.6; /* 增加行高提高可读性 */
+}
+
+/* 移动端响应式调整 */
+@media (max-width: 768px) {
+  .introParagraph {
+    font-size: 1.1rem; /* 移动端增加字体大小 */
+    line-height: 1.7; /* 增加行高 */
+  }
+}
+
+@media (max-width: 576px) {
+  .introParagraph {
+    font-size: 1.15rem; /* 小屏幕进一步增加字体大小 */
+    line-height: 1.8; /* 进一步增加行高 */
+  }
+}

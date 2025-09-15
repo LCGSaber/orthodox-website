@@ -55,6 +55,33 @@
 @layer base {
   body {
     @apply font-Verah;
-    font-size: 1.2vw;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* 响应式文字大小调整 */
+  @media (max-width: 1200px) {
+    body {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      font-size: 14px;
+      line-height: 1.6;
+    }
   }
 }
