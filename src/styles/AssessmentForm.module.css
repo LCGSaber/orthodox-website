@@ -20,6 +20,24 @@
     pointer-events: none;
     opacity: 0.7;
   }
+
+  /* 手机端响应式调整 */
+  @media (max-width: 768px) {
+    .backgroundText {
+      font-size: 50px; /* 进一步缩小字体大小 */
+      left: 25%; /* 进一步向右调整位置 */
+      transform: translateX(-40%); /* 调整水平居中方式 */
+    }
+  }
+
+  /* 小屏手机端进一步优化 */
+  @media (max-width: 480px) {
+    .backgroundText {
+      font-size: 40px; /* 再次缩小字体大小 */
+      left: 30%; /* 更靠右调整位置 */
+      transform: translateX(-30%); /* 再次调整水平居中方式 */
+    }
+  }
   
   /* 标题样式 - 与"您的称呼"列对齐 */
   .title {
